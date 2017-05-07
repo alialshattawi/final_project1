@@ -1,0 +1,2 @@
+json.extract! member_info, :id, :first_name, :last_name, :phone_number, :address, :email, :gender, :age, :latitude, :longitude, :created_at, :updated_at
+json.url member_info_url(member_info, format: :json)

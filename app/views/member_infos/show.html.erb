@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @member_info.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @member_info.last_name %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @member_info.phone_number %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @member_info.address %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @member_info.email %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @member_info.gender %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @member_info.age %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @member_info.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @member_info.longitude %>
+</p>
+
+<%= link_to 'Edit', edit_member_info_path(@member_info) %> |
+<%= link_to 'Back', member_infos_path %>
+
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@member_info.latitude}%2C#{@member_info.longitude}" %>
